@@ -1,0 +1,102 @@
+header {
+  background: #333 url("../images/main-bg.jpg") no-repeat center center/cover;
+  color: $light;
+  padding: 21px 0 350px 0;
+}
+
+.logo {
+  width: 15%;
+  height: auto;
+  vertical-align: middle; 
+  margin-left: 30px; 
+}
+
+.main-nav {
+  display: inline-block;
+  width: 55%;
+  margin: 0 auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  ul {
+    display: inline-block;
+    vertical-align: middle;  
+    list-style: none;
+    margin-left: 220px;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  a {
+    color: $light;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+}
+
+.basket {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 44px;
+  margin-left: 120px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &:after {
+    content: "";
+    background: url('../images/icons/basket.png') no-repeat;
+    width: 27px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  a {
+    color: $light;
+  }
+
+  span:hover {
+    text-decoration: underline;
+  }
+}
+
+.basket-amount {
+  color: #b7b6b6;
+}
+
+.main-text {
+  width: 68%;
+  margin: 14% auto auto auto;
+  text-align: center;
+
+  h1 {
+    font-size: 72px;
+    color: $light;
+    margin-bottom: -2px;
+  }
+
+  p {
+    color: #c2c1c1;
+    font-size: 28px;
+  }
+
+  img {
+    width: 60px; 
+  }
+}
+
+.video-button {
+  background: none;
+  border: none;
+}

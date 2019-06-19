@@ -1,0 +1,28 @@
+.bike-parts {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.bike-part {
+  display: inline-block; 
+
+  img {
+    width: 60%;
+  }
+
+  h3 {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  strong {
+    display: block;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 29px;
+  }
+}
+
+.forks {
+  width: 22%;
+}

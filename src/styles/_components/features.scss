@@ -1,0 +1,124 @@
+.features {
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+}
+
+.bike-show {
+  position: relative;
+
+  img {
+    width: 85%;
+  }
+}
+
+.feature {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  background: $dark-bg-color;
+  border: 5px solid rgba(230,230,230, 0.8);
+  border-radius: 50%;
+  color: $light;
+  line-height: 20px;
+
+  &:hover {
+    border: 5px solid #DDAA5C;
+    cursor: pointer;
+  }
+
+  &-rule {
+    top: 20%;
+    left: 62%;
+  }
+
+  &-derailers  {
+    top: 63%;
+    left: 25%;
+  }
+
+  &-pedals  {
+    top: 69%;
+    left: 44%;
+  }
+
+  &-frame  {
+    top: 27%;
+    left: 45%;
+  }
+
+  &-wheel  {
+    top: 75%;
+    left: 85%;
+  }
+
+  &-hadlebar  {
+    top: 20%;
+    left: 72%;
+  }
+}
+
+.controllers {
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+  left: -5%;
+  text-decoration: none;
+  border:none;
+  background: $dark-bg-color;
+  padding: 20px 20px 20px 10px;
+
+  &:before {
+    @include inner-border(5px, -1px, 5px, 5px);
+  }
+}
+
+.controller {
+  display: block;
+  margin-bottom: 28px;
+  width: 24px;
+  height: 26px;
+  border: none;
+}
+
+.refresh {
+  background: url("../images/icons/refresh.png") no-repeat center center;
+  outline: none;
+}
+
+.zoom {
+  &-in {
+    background: url("../images/icons/in.png") no-repeat center center;
+    outline: none;
+  }
+
+  &-out {
+    background: url("../images/icons/out.png") no-repeat center center;
+    margin-bottom: 0;
+  }
+}
+
+.feature-photos {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  overflow: hidden;
+}
+
+.feature-photos-item {
+  position: relative;
+  width: 2%;
+  height: auto;
+  margin-bottom: 13px;
+
+  &:hover::after {
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+}

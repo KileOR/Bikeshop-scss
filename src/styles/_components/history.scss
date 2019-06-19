@@ -1,0 +1,45 @@
+.history {
+  margin-top: 100px;
+}
+
+.description {
+  display: inline-block;
+  vertical-align: middle;
+  width: 46%;
+
+  p {
+    width: 85%;
+  }
+}
+
+.history-img {
+  width: 50%;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.button-history {
+  margin-top: 70px;
+}
+
+.about-bike {
+  position: relative;
+  background: url("../images/history/lines.png") no-repeat 45% 40%;
+
+  img {
+    vertical-align: middle;
+    width: 55%;
+    position: relative;
+    top:20px;
+    left: -120px;
+    z-index: -1;
+  }
+
+  p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 36%;
+    margin: -50px 0 0 2%;
+    font-style: italic;
+  }
+}

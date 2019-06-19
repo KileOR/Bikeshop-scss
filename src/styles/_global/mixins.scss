@@ -1,0 +1,17 @@
+@mixin font-config ($font-family, $weight, $line-height) {
+  font-family: $font-family;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin inner-border($top, $left, $right, $bottom) {
+  content: "";
+  display: block;
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+  border: 1px solid #fff;
+  opacity: 0.45;
+}

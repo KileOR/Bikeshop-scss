@@ -1,0 +1,47 @@
+@import "_global/variables";
+@import "_global/mixins";
+@import "_global/utilities";
+
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Ubuntu:300,300i,400,500');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  @include font-config($main-fonts, 100, 28px);
+}
+
+h1,
+h2,
+h3 {
+  @include font-config($heading-fonts, normal, 1);
+  color: #1f2835;
+}
+
+h2 {
+  font-size: 60px;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p, 
+strong {
+  color: #6a6a6a;
+  font-size: 18px;
+}
+
+section {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@import "_components/header";
+@import "_components/history";
+@import "_components/features";
+@import "_components/bike-parts";
+@import "_components/footer";

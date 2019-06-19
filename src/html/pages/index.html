@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Start</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Pamplet Home">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.bundle.css" />
+  </head>
+  <body>
+    <%= _.template(require('./../components/header.html'))(data) %>
+    <main>
+      <%= _.template(require('./../components/history.html'))(data) %>
+
+      <%= _.template(require('./../components/features.html'))(data) %>
+
+      <%= _.template(require('./../components/bike-parts.html'))(data) %>
+    </main>
+    <%= _.template(require('./../components/footer.html'))(data) %>
+    <script src="./scripts/bundle.js"></script>
+  </body>
+</html>
